@@ -96,12 +96,13 @@ class Die {
     dieText(this.value, this.die);
   }
 
+  // This function isn't even called on the dblclick eventlistener above currently
   delete() {
-    this.remove();
+    this.die.remove();
   }
 }
 
-let dieText = (value : number, die) => {
+let dieText = (value : number, die: HTMLDivElement) => {
   // console.log(value)
   // console.log(die);
   let dieFace = "";
