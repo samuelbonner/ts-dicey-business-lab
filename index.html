@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#127922; Sam's Dicey Business &#127922;</title>
+    <!-- Uses Bootstrap5 for containers & default stylization of containers/buttons/dice -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container" id="divs-container">
+        <!-- Jumbotron/introduction div -->
+        <div class="px-5 py-1 rounded-3">
+            <div class="container-fluid pt-2 text-align-center" id="jumbo-intro">
+                <h1 class="display-5 fw-bold">&#127922; Dicey Business! &#127922;</h1>
+                <p class="col-md fs-5 px-4">Use the buttons below to roll a new die, reroll all existing dice, or compute the total sum of all dice.</p>
+                <p class="col-md fs-5 px-4">You may click an individual die to reroll it. You may double-click it to dismiss it.</p>
+
+            </div>
+        </div>
+
+        <!-- Button divider for the three buttons (new, reroll, sum) -->
+        <div class="display-5 container-fluid px-5 py-1">
+
+            <div class="display-5 container-fluid" id="button-container">
+
+                <button id="new-dice-button" class="btn btn-success btn-lg dice-btn">+ New</button>
+                <button id="reroll-dice-button" class="btn btn-danger btn-lg dice-btn">&#10227; Reroll</button>
+                <button id="sum-dice-button" class="btn btn-secondary btn-lg dice-btn">= Sum</button>
+            </div>
+        </div>
+
+        <!-- Div where all the dice objects live. Should be empty (but with default spacing) on page load -->
+        <div class="display-5 container-fluid px-5 py-1">
+            <div class="container-fluid" id="dice-container">
+
+                <!-- Example dice to play with layout/style. Remove comment if necessary -->
+                <!-- <div class="dice" id="1">6</div>
+                <div class="dice" id="2">3</div>
+                <div class="dice" id="3">2</div> -->
+
+                <!-- Even more example dice to test flex-wrap -->
+                <!-- <div class="dice" id="4">4</div>
+                <div class="dice" id="5">1</div>
+                <div class="dice" id="6">5</div>
+                <div class="dice" id="7">4</div>
+                <div class="dice" id="8">2</div>
+                <div class="dice" id="9">6</div> -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap bundled script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <!-- Script for OOP button/dice behavior -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
